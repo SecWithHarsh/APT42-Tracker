@@ -28,7 +28,7 @@
 ### **💻 Attacker Infrastructure**
 - **Phishing:** Deceptive Google/Gmail login pages.
 - **Payloads:** Keyloggers delivered after initial compromise.
-
+- **Malware:** No malware observed in this specific campaign. Credential theft was conducted via a fake Single Page Application (SPA) mimicking Google MFA, hosted on attacker-controlled infrastructure.
 ---
 
 ## **Indicators of Compromise (IOCs)**
@@ -87,3 +87,11 @@
 | `pa-crtdomain[.]info` | `infinit-world[.]info` | `alex-mendez-fire[.]info` |
 | `reg-d[.]info` | `everything-here[.]info` | `healthy-lifestyle[.]fit` |
 | `alpha-man[.]info` | `lesson-first[.]info` | `master-club[.]info` |
+
+-----
+## **Summary of the report**
+- >APT42 (Educated Manticore), an Iran-linked cyberespionage group, is targeting academic professionals and researchers, likely for regime-aligned intelligence collection.
+-  The campaign relies entirely on credential harvesting, with no malware observed during this operation.
+- The threat actors abused Google’s Site domain to host a fake Google Meet invitation, redirecting victims to a phishing page designed to mimic Google MFA login flows using React Router for added realism.
+- The infrastructure was carefully designed to appear legitimate, with single-page applications preventing reloads and improving believability.
+- In some cases, the attackers engaged victims in physical or virtual meetings to build trust before delivering phishing links.
