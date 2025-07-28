@@ -95,3 +95,8 @@
 - The threat actors abused Google’s Site domain to host a fake Google Meet invitation, redirecting victims to a phishing page designed to mimic Google MFA login flows using React Router for added realism.
 - The infrastructure was carefully designed to appear legitimate, with single-page applications preventing reloads and improving believability.
 - In some cases, the attackers engaged victims in physical or virtual meetings to build trust before delivering phishing links.
+
+-----
+## References
+- Checkpoint Research
+ > Note: Although the POWERSTAR backdoor was not used in this phishing campaign, its prior use by APT42 remains critical to understanding the group’s tooling and future capabilities.
